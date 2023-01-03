@@ -12,3 +12,4 @@ using namespace std;
 
 void BTCS_1D();
 void FTCS_1D();
+void CNTCS_1D();
