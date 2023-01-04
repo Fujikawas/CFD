@@ -1,5 +1,3 @@
-# CFD
-Self-written simple codes for testing discretization schemes
 # Start here
 It's a project mainly with C++ to test typical numerical schemes.
 
