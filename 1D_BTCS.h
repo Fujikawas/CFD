@@ -13,3 +13,6 @@ using namespace std;
 void BTCS_1D();
 void FTCS_1D();
 void CNTCS_1D();
+void RK2_1D();
+void RK3_1D();
+void RK4_1D();
