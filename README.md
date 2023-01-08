@@ -5,7 +5,7 @@ The main function stays in *main.cpp*. The different schemes are written as func
 
 # For solving 1D heat transfer equation $\frac{\partial u}{\partial t}=\alpha \frac{\partial^2 u}{\partial x ^2}$
 With the *1D_FTCS.cpp, 1D_BTCS.cpp* and *1D_CrackNicolson.cpp* are the forward Euler, backward Euler and trapezoid discretization 
-scheme for time tested.Their declarations are in *1D_BTCS.h*. The central FD scheme is choosed for spatial discretization.
+scheme for time tested. The three typical Runge-Kutta schemes for time dimension are also tested. Their declarations are in *1D_BTCS.h*. The central FD scheme is choosed for spatial discretization.
 
 The algebraicEqs.cpp and ~.h is written to solve the algebraic 
 equation system with Thomas's algorithm, which is simplified Gauss's Elimination method for EQS with tridiagonal coefficient matrix. They 
