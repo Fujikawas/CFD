@@ -6,13 +6,34 @@ constexpr auto Pi = 3.1415926;
 #include <ostream>
 #include <iterator>
 #include <vector>
-#include "algebraicEqs.h";
 
 using namespace std;
 
+//for heat transfer
 void BTCS_1D();
 void FTCS_1D();
 void CNTCS_1D();
 void RK2_1D();
 void RK3_1D();
 void RK4_1D();
+
+//for solution of algebraic eqs.
+void thomasTridiagonal(vector<double>, vector<double>, vector<double>, vector<double>&, vector<double>);
+
+//Burger's equation
+// for WENO5
+void WENO5_Dirichlet();
+void rhs(int, double, vector<double>, vector<double>&);
+void wenoL(int, vector<double>, vector<double>&);
+void wenoR(int, vector<double>, vector<double>&);
+double wcL(double, double, double, double, double);
+double wcR(double, double, double, double, double);
+//for CRWENO5
+void CRWENO5_Dirichlet();
+void rhs_CR(int, double, vector<double>, vector<double>&);// Calculate right hand term of the inviscid Burgers equation
+void wenoL_CR(int, vector<double>, vector<double>&);// CRWENO reconstruction ofr upwind direction (positive and left to right)
+void wenoR_CR(int, vector<double>, vector<double>&);
+vector<double> wcL_CR(double, double, double, double, double);//nonlinear weights for upwind direction
+vector<double> wcR_CR(double, double, double, double, double);
+void thomasTridiagonal_CRWENO(vector<double>, vector<double>, vector<double>, vector<double>&, vector<double>,int, int);
+
