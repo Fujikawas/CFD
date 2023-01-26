@@ -9,6 +9,8 @@ int main()
 	//CNTCS_1D();
 	//RK2_1D();
 	//RK3_1D();
-	RK4_1D();
+	//RK4_1D();
+	//WENO5_Dirichlet();
+	CRWENO5_Dirichlet();
 	return 0;
 }
