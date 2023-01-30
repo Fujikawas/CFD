@@ -36,4 +36,14 @@ void wenoR_CR(int, vector<double>, vector<double>&);
 vector<double> wcL_CR(double, double, double, double, double);//nonlinear weights for upwind direction
 vector<double> wcR_CR(double, double, double, double, double);
 void thomasTridiagonal_CRWENO(vector<double>, vector<double>, vector<double>, vector<double>&, vector<double>,int, int);
+// for FVM-Flux splitting
+void FluxSplitting_Burgers();
+void rhs_FS(int, double, vector<double>, vector<double>&);
+void waveSpeed(int, vector<double>, vector<double>&);
+vector<double> wenoL_FS(int, vector<double>);
+vector<double> wenoR_FS(int, vector<double>);
+//for FVM-Riemann solver
+void Riemann_period();
+void rhs_RM(int, double, vector<double>, vector<double>&);
+void Riemann(int, vector<double>, vector<double>, vector<double>, vector<double>&, vector<double>, vector<double>);
 
