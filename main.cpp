@@ -11,6 +11,8 @@ int main()
 	//RK3_1D();
 	//RK4_1D();
 	//WENO5_Dirichlet();
-	CRWENO5_Dirichlet();
+	//CRWENO5_Dirichlet();
+	//FluxSplitting_Burgers();
+	Riemann_period();
 	return 0;
 }
