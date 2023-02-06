@@ -13,6 +13,9 @@ int main()
 	//WENO5_Dirichlet();
 	//CRWENO5_Dirichlet();
 	//FluxSplitting_Burgers();
-	Riemann_period();
+	//Riemann_period();
+	//Euler_roe();
+	//Euler_hllc();
+	Euler_rusanov();
 	return 0;
 }
