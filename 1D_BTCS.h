@@ -47,3 +47,19 @@ void Riemann_period();
 void rhs_RM(int, double, vector<double>, vector<double>&);
 void Riemann(int, vector<double>, vector<double>, vector<double>, vector<double>&, vector<double>, vector<double>);
 
+//1D Euler Solver
+void Euler_roe();
+void rhs_roe(int, double, double, vector<vector<double>>, vector<vector<double>>&);
+void flux_roe(int, double, vector<vector<double>>, vector<vector<double>>&);
+void roe(int, double, vector<vector<double>>, vector<vector<double>>, vector<vector<double>>&,vector<vector<double>>, vector<vector<double>>);
+vector<vector<double>> wenoL_roe(int, vector<vector<double>>);
+vector<vector<double>> wenoR_roe(int, vector<vector<double>>);
+//HLLC
+void Euler_hllc();
+void rhs_hllc(int, double, double, vector<vector<double>>, vector<vector<double>>&);
+void hllc(int, double, vector<vector<double>>, vector<vector<double>>, vector<vector<double>>&, vector<vector<double>>, vector<vector<double>>);
+//Rusanov
+//HLLC
+void Euler_rusanov();
+void rhs_rusanov(int, double, double, vector<vector<double>>, vector<vector<double>>&);
+void rusanov(int, double, vector<vector<double>>, vector<vector<double>>, vector<vector<double>>&, vector<vector<double>>, vector<vector<double>>);
