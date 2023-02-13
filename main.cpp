@@ -16,6 +16,7 @@ int main()
 	//Riemann_period();
 	//Euler_roe();
 	//Euler_hllc();
-	Euler_rusanov();
+	//Euler_rusanov();
+	Poisson_FFT();
 	return 0;
 }
