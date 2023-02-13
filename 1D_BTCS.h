@@ -63,3 +63,6 @@ void hllc(int, double, vector<vector<double>>, vector<vector<double>>, vector<ve
 void Euler_rusanov();
 void rhs_rusanov(int, double, double, vector<vector<double>>, vector<vector<double>>&);
 void rusanov(int, double, vector<vector<double>>, vector<vector<double>>, vector<vector<double>>&, vector<vector<double>>, vector<vector<double>>);
+
+//2D Poisson equation
+void Poisson_FFT();
