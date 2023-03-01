@@ -1,5 +1,5 @@
 # Start here
-It's a project mainly with C++ to test typical numerical schemes.
+It's a project mainly with C++ to test typical numerical schemes. The most interpretations to the algorithms in this project could be found in: Pawar, S.; San, O. CFD Julia: A Learning Module Structuring an Introductory Course on Computational Fluid Dynamics. Fluids 2019, 4, 159. https://doi.org/10.3390/fluids4030159
 
 The main function stays in *main.cpp*. The different schemes are written as functions and the whole solving process is in the function completed i.e. nothing in commen is considered and in the main function implemented.
 
